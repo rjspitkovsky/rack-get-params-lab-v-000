@@ -20,7 +20,6 @@ class Application
         resp.write "Your cart is empty"
       else
           resp.write @@cart.join("\n")
-
       end
 
     elsif req.path.match(/add/)
